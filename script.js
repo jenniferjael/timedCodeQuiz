@@ -25,6 +25,7 @@ var startOver = document.querySelector("#startOver");
 var indexQuestions = 0;
 var rightAnswers = 0;
 var wrongAnswers = 0;
+var wrong = false;
 // Creating an array of objects for questions, answers, and options.
 var questions = [
   {
@@ -85,7 +86,7 @@ function scoreboard() {
   displayStartOver.style.display = "block";
 }
 // SETTING THE TIMER
-var seconds = 10;
+var seconds = 30;
 function setTime() {
   var interval = setInterval(function () {
     seconds--;
@@ -97,6 +98,11 @@ function setTime() {
       // score board
       alert("Game Over!");
       scoreboard();
+    }
+    if(wrong === true){
+        seconds = seconds - 5;
+        wrong = false;
+        return seconds;
     }
   }, 1000);
 }
@@ -121,6 +127,7 @@ answerA.addEventListener("click", function () {
   } else {
     alert("wrong");
     wrongAnswers++;
+    wrong = true;
   }
   indexQuestions++;
   displayQuestion();
@@ -133,6 +140,7 @@ answerB.addEventListener("click", function () {
   } else {
     alert("wrong");
     wrongAnswers++;
+    wrong = true;
   }
   indexQuestions++;
   displayQuestion();
@@ -145,6 +153,7 @@ answerC.addEventListener("click", function () {
   } else {
     alert("wrong");
     wrongAnswers++;
+    wrong = true;
   }
   indexQuestions++;
   displayQuestion();
