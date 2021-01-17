@@ -29,8 +29,8 @@ The following images demonstrates the application functionality:
 
 ## links
 
-You are required to submit BOTH of the following for review:
+* The URL of the functional, deployed project:
 
-* The URL of the functional, deployed application.
+<https://jenniferjael.github.io/timedCodeQuiz/>
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+
