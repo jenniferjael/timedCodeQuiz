@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+   <!-- Container holding title and start button-->
+   <div id="title">CODING TIMED QUIZ</div>
+   <div id="intructionsBox" style="display: block;">
+    <ul id="boxInt" style="list-style: square;">
+      <li>This test is set to 10 seconds.   THINK FAST!</li>
+     <li>You cannot go back.                         THINK TWICE BEFORE YOU CLICK</li>
+      <li>START OVER button refreshes the page saving your scores.   SO COOL!</li>
+      <li>FINISH button refreshes the page and erases all the scores.  NEXT!</li>
+      <li>HIGHER SCORE IS 3</li>
+    </ul>
+     </div>
+
+   <!--adding a timer and Start button-->
+   <div>
+  <button type="button" id="timer" class="btn btn-primary-timer">timer</button>
+ <button type="button" id="startBtn">START BUTTON</button>
+  </div>
+  <!--section holding questions-->
+  <div id="questionnaire" style="display: none;">
+    <h2 id="question">question</h2>
+    <button type="button" id="answerA" class="btn btn-primary-answerA">answerA</button>
+    <button type="button" id="answerB" class="btn btn-primary-answerB">answerB</button>
+    <button type="button" id="answerC" class="btn btn-primary-answerC">answerC</button>
+  </div>
+  <!--score board holder-->
+  <div id="scoreBoard" style="display: none;">
+    <h2>SCORES</h2>
+    <ul id="scores">
+    </ul>
+  </div>
+<!--final buttons-->
+  <div id="displayStartOver" style="display: none;"> 
+    <button type="button" id="startOver" class="floated" id="slide_startOver_button">Start Over?</button>
+    </div>
+<div id="displayDoneBtn" style="display: none;"> 
+   <button type="button" id="finishBtn" class="floated" id="slide_finish_button">Finish</button>
+  </div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html

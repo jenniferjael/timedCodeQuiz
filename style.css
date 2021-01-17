@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+  }
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+  }
+  #startBtn {
+    border-width: 25px;
+    border-color: lightcoral;
+    margin-top: 05%;
+    margin-bottom: 95%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  
+  .hide {
+    display: none;
+  }
+  #timer{
+      text-decoration: underline red;
+  }
+  
+  #scoreBoard h2 {
+    text-align: center;
+  }
+  #scores {
+    text-align: center;
+  }
+  .floated{
+      float:left;
+      margin-right:5px;
+  }
+  ul{
+    background-color:lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
